@@ -17,7 +17,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 12. Agent Training Gym-Sokoban https://github.com/ZihanWang314/RAGEN
 13. R1 Computer Use (LLM-Computer Interaction) train an agent to interact with a computer environment (e.g., file system, web browser, command line) while utilizing a neural reward model to validate the correctness of the agent’s actions and reason about intermediate steps.    https://github.com/agentsea/r1-computer-use 
 14. Aha Moment reproduction tutorial.  https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/mini-deepseek-r1-aha-grpo.ipynb  
-15. Simple Reinforcement Learning for Reasoning  https://github.com/hkust-nlp/simpleRL-reason 
+15. Simple Reinforcement Learning for Reasoning  https://github.com/hkust-nlp/simpleRL-reason
+16. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 
 
 
@@ -26,7 +27,9 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 2. Rule Based Rewards for Language Model Safety https://cdn.openai.com/rule-based-rewards-for-language-model-safety.pdf
 3. MATH-Perturb: Benchmarking LLMs' Math Reasoning Abilities against Hard Perturbations.  https://arxiv.org/abs/2502.06453
 4. Free Process Rewards without Process Labels. https://arxiv.org/abs/2412.01981
-5. Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback. https://arxiv.org/abs/2501.12895 
+5. Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback. https://arxiv.org/abs/2501.12895
+6. Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling https://arxiv.org/abs/2502.06703
+   
 
 
 ## PipeLine work which can be used to more easily reproduce R1:
