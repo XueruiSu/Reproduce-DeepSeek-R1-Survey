@@ -56,6 +56,9 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 12. DeepSeek-VL https://arxiv.org/abs/2403.05525
 13. DeepSeek-Coder https://arxiv.org/abs/2401.14196
 14. DeepSeek: Content Based Image Search & Retrieval https://arxiv.org/abs/2401.14196
+15. DeepSeekMoE https://arxiv.org/abs/2401.06066
+16. Janus-Pro https://github.com/deepseek-ai/Janus https://github.com/deepseek-ai/Janus/blob/main/janus_pro_tech_report.pdf
+17. Expert-Specialized Fine-Tuning https://github.com/deepseek-ai/ESFT
     
 ## Discussion about Reward System
 1. Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning https://arxiv.org/abs/2502.06781
