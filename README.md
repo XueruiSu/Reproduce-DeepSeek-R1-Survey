@@ -57,7 +57,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 13. DeepSeek-Coder https://arxiv.org/abs/2401.14196
 14. DeepSeek: Content Based Image Search & Retrieval https://arxiv.org/abs/2401.14196
     
-
+## Discussion about Reward System
+1. Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning https://arxiv.org/abs/2502.06781
 
 
 
