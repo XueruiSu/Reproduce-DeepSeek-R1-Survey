@@ -42,23 +42,26 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 7. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
 
 ## DeepSeek Series
-1. DeepSeek LLM https://arxiv.org/pdf/2401.02954
-2. DeepSeekMath https://arxiv.org/abs/2402.03300
-3. DeepSeek-V2 https://arxiv.org/abs/2405.04434
-4. DeepSeek-V3 https://arxiv.org/html/2412.19437v1
-5. DeepSeek-R1 https://arxiv.org/abs/2501.12948
-6. DeepSeek-Coder-V2 https://github.com/deepseek-ai/DeepSeek-Coder-V2  https://arxiv.org/pdf/2406.11931
-7. CodeI/O https://arxiv.org/pdf/2502.07316
-8. Native Sparse Attention https://arxiv.org/abs/2502.11089
-9. DeepSeek-VL2 https://arxiv.org/abs/2412.10302
-10. DeepSeek-Prover-V1.5 https://arxiv.org/abs/2408.08152
-11. DeepSeek-Prover https://arxiv.org/abs/2405.14333
-12. DeepSeek-VL https://arxiv.org/abs/2403.05525
-13. DeepSeek-Coder https://arxiv.org/abs/2401.14196
-14. DeepSeek: Content Based Image Search & Retrieval https://arxiv.org/abs/2401.14196
-15. DeepSeekMoE https://arxiv.org/abs/2401.06066
-16. Janus-Pro https://github.com/deepseek-ai/Janus https://github.com/deepseek-ai/Janus/blob/main/janus_pro_tech_report.pdf
-17. Expert-Specialized Fine-Tuning https://github.com/deepseek-ai/ESFT
+1. DreamCraft3D https://arxiv.org/abs/2310.16818
+2. Fire-Flyer AI-HPC https://arxiv.org/abs/2408.14158
+3. Expert-Specialized Fine-Tuning https://github.com/deepseek-ai/ESFT
+4. Janus-Pro https://github.com/deepseek-ai/Janus https://github.com/deepseek-ai/Janus/blob/main/janus_pro_tech_report.pdf
+5. DeepSeek LLM https://arxiv.org/pdf/2401.02954
+6. DeepSeekMoE https://arxiv.org/abs/2401.06066
+7. DeepSeekMath https://arxiv.org/abs/2402.03300
+8. DeepSeek-V2 https://arxiv.org/abs/2405.04434
+9. DeepSeek-V3 https://arxiv.org/html/2412.19437v1
+10. DeepSeek-R1 https://arxiv.org/abs/2501.12948
+11. DeepSeek-Coder-V2 https://github.com/deepseek-ai/DeepSeek-Coder-V2  https://arxiv.org/pdf/2406.11931
+12. CodeI/O https://arxiv.org/pdf/2502.07316
+13. Native Sparse Attention https://arxiv.org/abs/2502.11089
+14. DeepSeek-VL2 https://arxiv.org/abs/2412.10302
+15. DeepSeek-Prover-V1.5 https://arxiv.org/abs/2408.08152
+16. DeepSeek-Prover https://arxiv.org/abs/2405.14333
+17. DeepSeek-VL https://arxiv.org/abs/2403.05525
+18. DeepSeek-Coder https://arxiv.org/abs/2401.14196
+19. DeepSeek: Content Based Image Search & Retrieval https://arxiv.org/abs/2401.14196
+
     
 ## Discussion about Reward System
 1. Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning https://arxiv.org/abs/2502.06781
