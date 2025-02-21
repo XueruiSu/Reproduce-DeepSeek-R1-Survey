@@ -32,7 +32,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
    
 
 
-## PipeLine work which can be used to more easily reproduce R1:
+## PipeLine work which can be used to reproduce R1 more easily:
 1. HybridFlow: A Flexible and Efficient RLHF Framework. https://arxiv.org/abs/2409.19256 https://github.com/volcengine/verl
 2. ReaLHF: ReaL: Efficient RLHF Training for LLMs with Parameter Reallocation. https://github.com/openpsi-project/ReaLHF
 3. OpenRLHF: a high-performance RLHF framework built on Ray, DeepSpeed and HF Transformers. https://github.com/OpenRLHF/OpenRLHF
