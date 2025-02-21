@@ -19,6 +19,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 14. Aha Moment reproduction tutorial.  https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/mini-deepseek-r1-aha-grpo.ipynb  
 15. Simple Reinforcement Learning for Reasoning  https://github.com/hkust-nlp/simpleRL-reason
 16. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
+17. Open-Reasoner-Zero https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero
 
 
 
