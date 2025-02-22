@@ -22,7 +22,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 17. Open-Reasoner-Zero https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero
 
 ## Multi-Modal R1
-1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml 
+1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
+2. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
 
 ## Other work that is different from DeepSeek's technical route but is equally "Aha":
 1. With only 817 training samples, it achieves outstanding performance on the AIME and MATH benchmarks. Belief: After the model has accumulated rich knowledge during the pre-training phase, it may only need a small number of well-structured samples to unlock advanced reasoning capabilities. https://github.com/GAIR-NLP/LIMO 
@@ -32,7 +33,6 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 5. Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback. https://arxiv.org/abs/2501.12895
 6. Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling https://arxiv.org/abs/2502.06703
 7. MedS3: Towards Medical Small Language Models with Self-Evolved Slow Thinking. MedS3 consists of a policy model and a process reward model (PRM), which is iteratively optimized by learning on 16 different datasets, including medical diagnosis, biomedicine, and knowledge question answering, using only 7465 seed data, combined with fine-grained Monte Carlo tree search and process supervision signals for rule verification. https://arxiv.org/pdf/2501.12051
-8. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
    
 
 
