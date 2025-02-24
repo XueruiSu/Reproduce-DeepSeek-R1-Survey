@@ -1,7 +1,7 @@
 # Reproduce-DeepSeek-R1-Survey
 This repository collects various works that reproduce DeepSeek R1, as well as works related to DeepSeek R1 and the DeepSeek series.
 
-## Work which reproduce R1
+## Work related to DeepSeek's Tech
 1. R1 reproduction of logic problems https://github.com/Unakar/Logic-RL 
 2. Start RL with short context length and gradually increase context length. https://github.com/agentica-project/deepscaler 
 3. The role of CoT in Reasoning https://github.com/eddycmu/demystify-long-cot  https://arxiv.org/pdf/2502.03373
@@ -19,6 +19,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 14. Aha Moment reproduction tutorial.  https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/mini-deepseek-r1-aha-grpo.ipynb  
 15. Simple Reinforcement Learning for Reasoning  https://github.com/hkust-nlp/simpleRL-reason
 16. Open-Reasoner-Zero https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero
+17. MLA Transfer https://arxiv.org/abs/2502.14837 https://github.com/JT-Ushio/MHA2MLA
 
 ## Multi-Modal Reasoning Large Language Model
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
