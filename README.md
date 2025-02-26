@@ -73,6 +73,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 18. DeepSeek-Coder https://arxiv.org/abs/2401.14196
 19. DeepSeek: Content Based Image Search & Retrieval https://arxiv.org/abs/2401.14196
 20. FlashMLA https://github.com/deepseek-ai/FlashMLA
+21. DeepEP https://github.com/deepseek-ai/DeepEP
+22. DeepGEMM https://github.com/deepseek-ai/DeepGEMM
 
     
 ## Discussion about Reward System
