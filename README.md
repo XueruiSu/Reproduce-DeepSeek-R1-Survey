@@ -42,7 +42,9 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 5. umarigan/deepseek-r1-reasoning-prompts https://huggingface.co/datasets/umarigan/deepseek-r1-reasoning-prompts
 6. mlabonne/dolphin-r1-deepseek mlabonne/dolphin-r1-deepseek
 7. DKYoon/dolphin-r1-deepseek-filtered-short https://huggingface.co/datasets/DKYoon/dolphin-r1-deepseek-filtered-short
-8. open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details https://huggingface.co/datasets/open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details 
+8. open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details https://huggingface.co/datasets/open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details
+9. agentica-org/DeepScaleR-Preview-Dataset: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
+10. 2K logic dataset: (Logic RL)
 
 ## PipeLine work which can be used to reproduce R1 more easily:
 1. HybridFlow: A Flexible and Efficient RLHF Framework. https://arxiv.org/abs/2409.19256 https://github.com/volcengine/verl
