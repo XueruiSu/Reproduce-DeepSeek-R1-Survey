@@ -53,6 +53,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 4. DeepSpeed Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales. https://github.com/deepspeedai/DeepSpeed/tree/master/blogs/deepspeed-chat/ds-chat-release-8-31 / https://github.com/deepspeedai/DeepSpeedExamples/blob/master/applications/DeepSpeed-Chat/README.md
 5. NVIDIA NeMo-Aligner: a scalable toolkit for efficient model alignment. https://github.com/NVIDIA/NeMo-Aligner
 6. MoBA: MIXTURE OF BLOCK ATTENTION FOR LONG-CONTEXT LLMS https://github.com/MoonshotAI/MoBA
+7. Open R1 https://github.com/huggingface/open-r1
 
 ## DeepSeek Series
 1. DreamCraft3D https://arxiv.org/abs/2310.16818
