@@ -45,6 +45,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 8. open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details https://huggingface.co/datasets/open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details
 9. agentica-org/DeepScaleR-Preview-Dataset: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 10. 2K logic dataset: (Logic RL)
+11. OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 
 ## PipeLine work which can be used to reproduce R1 more easily:
 1. HybridFlow: A Flexible and Efficient RLHF Framework. https://arxiv.org/abs/2409.19256 https://github.com/volcengine/verl
