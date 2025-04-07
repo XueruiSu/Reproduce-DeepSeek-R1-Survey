@@ -22,6 +22,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 17. MLA Transfer https://arxiv.org/abs/2502.14837 https://github.com/JT-Ushio/MHA2MLA
 18. Online-DPO-R1 https://github.com/RLHFlow/Online-DPO-R1
 19. Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning https://github.com/XueruiSu/Trust-Region-Preference-Approximation
+20. Short-RL https://github.com/lblankl/Short-RL
 
 ## Multi-Modal Reasoning Large Language Model
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
