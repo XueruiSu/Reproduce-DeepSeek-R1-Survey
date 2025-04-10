@@ -1,8 +1,11 @@
+## News
+- [2025/04/06] We released a novel RL algorithm named Trust Region Preference Approximation (TRPA) for LLM reasoning tasks on 6 Apr 2025, welcome your suggestion and discussion! Paper link: [Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning](https://arxiv.org/abs/2504.04524).
+
 # Reproduce-DeepSeek-R1-Survey
 This repository collects various works that reproduce DeepSeek R1, as well as works related to DeepSeek R1 and the DeepSeek series.
 
 ## Work related to DeepSeek's Tech
-1. R1 reproduction of logic problems https://github.com/Unakar/Logic-RL 
+1. Logic RL: R1 reproduction of logic problems https://arxiv.org/abs/2502.14768
 2. Start RL with short context length and gradually increase context length. https://github.com/agentica-project/deepscaler 
 3. The role of CoT in Reasoning https://github.com/eddycmu/demystify-long-cot  https://arxiv.org/pdf/2502.03373
 4. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393 
@@ -47,7 +50,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 7. DKYoon/dolphin-r1-deepseek-filtered-short https://huggingface.co/datasets/DKYoon/dolphin-r1-deepseek-filtered-short
 8. open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details https://huggingface.co/datasets/open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details
 9. agentica-org/DeepScaleR-Preview-Dataset: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
-10. 2K logic dataset: (Logic RL)
+10. 2K logic dataset: https://huggingface.co/datasets/K-and-K/knights-and-knaves   which used in Logic RL (https://github.com/Unakar/Logic-RL)
 11. OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 
 ## PipeLine work which can be used to reproduce R1 more easily:
