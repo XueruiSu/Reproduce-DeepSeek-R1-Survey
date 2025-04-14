@@ -4,11 +4,11 @@
 # Reproduce-DeepSeek-R1-Survey
 This repository collects various works that reproduce DeepSeek R1, as well as works related to DeepSeek R1 and the DeepSeek series.
 
-## Work related to DeepSeek's Tech
+## Work related to DeepSeek's Tech, i.e. papers for LLM reasoning tasks mainly relying on RL
 1. Logic RL: R1 reproduction of logic problems https://arxiv.org/abs/2502.14768
 2. Start RL with short context length and gradually increase context length. https://github.com/agentica-project/deepscaler 
 3. The role of CoT in Reasoning https://github.com/eddycmu/demystify-long-cot  https://arxiv.org/pdf/2502.03373
-4. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393 
+4. Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning https://github.com/XueruiSu/Trust-Region-Preference-Approximation
 5. Hierarchical LLM Reasoning via Scaling Thought Templates Revolutionary inference-scaling paradigm with a hierarchical RL algorithm: empowering a 32B model with 500 thought templates to outperform o1-preview and DeepSeek-V3 in reasoning tasks. https://github.com/Gen-Verse/ReasonFlux 
 6. By imitating the correct samples, learning the preference of the wrong samples, and focusing on the key steps, there is no need to rely on super-large-scale models (such as DeepSeek-R1) for distillation, and only training is done through reinforcement learning. 
  https://github.com/InternLM/OREAL https://arxiv.org/abs/2502.06781 
@@ -24,8 +24,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 16. Open-Reasoner-Zero https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero
 17. MLA Transfer https://arxiv.org/abs/2502.14837 https://github.com/JT-Ushio/MHA2MLA
 18. Online-DPO-R1 https://github.com/RLHFlow/Online-DPO-R1
-19. Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning https://github.com/XueruiSu/Trust-Region-Preference-Approximation
-20. Short-RL https://github.com/lblankl/Short-RL
+19. Short-RL https://github.com/lblankl/Short-RL
 
 ## Multi-Modal Reasoning Large Language Model
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
@@ -39,9 +38,10 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 5. Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback. https://arxiv.org/abs/2501.12895
 6. Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling https://arxiv.org/abs/2502.06703
 7. MedS3: Towards Medical Small Language Models with Self-Evolved Slow Thinking. MedS3 consists of a policy model and a process reward model (PRM), which is iteratively optimized by learning on 16 different datasets, including medical diagnosis, biomedicine, and knowledge question answering, using only 7465 seed data, combined with fine-grained Monte Carlo tree search and process supervision signals for rule verification. https://arxiv.org/pdf/2501.12051
+8. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393 
    
 ## Reasoning Dataset
-1. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
+1. OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 2. Congliu/Chinese-DeepSeek-R1-Distill-data-110k https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k
 3. Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
 4. TechxGenus/deepseek_r1_code_1k https://huggingface.co/datasets/TechxGenus/deepseek_r1_code_1k
@@ -51,7 +51,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 8. open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details https://huggingface.co/datasets/open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details
 9. agentica-org/DeepScaleR-Preview-Dataset: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 10. 2K logic dataset: https://huggingface.co/datasets/K-and-K/knights-and-knaves   which used in Logic RL (https://github.com/Unakar/Logic-RL)
-11. OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
+11. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
+12. Open-Reasoner-Zero/orz_math_57k_collection https://huggingface.co/datasets/Open-Reasoner-Zero/orz_math_57k_collection
 
 ## PipeLine work which can be used to reproduce R1 more easily:
 1. HybridFlow: A Flexible and Efficient RLHF Framework. https://arxiv.org/abs/2409.19256 https://github.com/volcengine/verl
