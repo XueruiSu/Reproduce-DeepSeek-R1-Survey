@@ -25,10 +25,13 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 17. MLA Transfer https://arxiv.org/abs/2502.14837 https://github.com/JT-Ushio/MHA2MLA
 18. Online-DPO-R1 https://github.com/RLHFlow/Online-DPO-R1
 19. Short-RL https://github.com/lblankl/Short-RL
+20. Seed-Thinking-v1.5 https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
+21. Skywork-OR1 https://github.com/SkyworkAI/Skywork-OR1
 
 ## Multi-Modal Reasoning Large Language Model
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
 2. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
+3. UNO https://arxiv.org/abs/2504.02160  https://bytedance.github.io/UNO/
 
 ## Other work that is different from DeepSeek's technical route but is equally "Aha":
 1. With only 817 training samples, it achieves outstanding performance on the AIME and MATH benchmarks. Belief: After the model has accumulated rich knowledge during the pre-training phase, it may only need a small number of well-structured samples to unlock advanced reasoning capabilities. https://github.com/GAIR-NLP/LIMO 
@@ -41,7 +44,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 8. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393 
    
 ## Reasoning Dataset
-1. OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
+1.  open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 2. Congliu/Chinese-DeepSeek-R1-Distill-data-110k https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k
 3. Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
 4. TechxGenus/deepseek_r1_code_1k https://huggingface.co/datasets/TechxGenus/deepseek_r1_code_1k
@@ -51,8 +54,9 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 8. open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details https://huggingface.co/datasets/open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details
 9. agentica-org/DeepScaleR-Preview-Dataset: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 10. 2K logic dataset: https://huggingface.co/datasets/K-and-K/knights-and-knaves   which used in Logic RL (https://github.com/Unakar/Logic-RL)
-11. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
-12. Open-Reasoner-Zero/orz_math_57k_collection https://huggingface.co/datasets/Open-Reasoner-Zero/orz_math_57k_collection
+11. Open-Reasoner-Zero/orz_math_57k_collection https://huggingface.co/datasets/Open-Reasoner-Zero/orz_math_57k_collection
+12. Beyond AIME (Seed-Thinking-v1.5) https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
+13. Skywork/Skywork-OR1-RL-Data https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data
 
 ## PipeLine work which can be used to reproduce R1 more easily:
 1. HybridFlow: A Flexible and Efficient RLHF Framework. https://arxiv.org/abs/2409.19256 https://github.com/volcengine/verl
