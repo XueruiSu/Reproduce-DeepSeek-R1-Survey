@@ -27,6 +27,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 19. Short-RL https://github.com/lblankl/Short-RL
 20. Seed-Thinking-v1.5 https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
 21. Skywork-OR1 https://github.com/SkyworkAI/Skywork-OR1
+22. Heimdall: test-time scaling on the generative verification https://arxiv.org/pdf/2502.03095
 
 ### How to get more beneficial responses for RL training during inference?
 1. TTRL https://arxiv.org/abs/2504.16084
