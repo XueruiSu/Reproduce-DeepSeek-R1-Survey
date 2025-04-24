@@ -38,6 +38,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
 2. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
 3. UNO https://arxiv.org/abs/2504.02160  https://bytedance.github.io/UNO/
+4. KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking https://github.com/juyeonnn/KGMEL
+5. 
 
 ## Other work that is different from DeepSeek's technical route but is equally "Aha":
 1. With only 817 training samples, it achieves outstanding performance on the AIME and MATH benchmarks. Belief: After the model has accumulated rich knowledge during the pre-training phase, it may only need a small number of well-structured samples to unlock advanced reasoning capabilities. https://github.com/GAIR-NLP/LIMO 
@@ -47,7 +49,11 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 5. Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback. https://arxiv.org/abs/2501.12895
 6. Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling https://arxiv.org/abs/2502.06703
 7. MedS3: Towards Medical Small Language Models with Self-Evolved Slow Thinking. MedS3 consists of a policy model and a process reward model (PRM), which is iteratively optimized by learning on 16 different datasets, including medical diagnosis, biomedicine, and knowledge question answering, using only 7465 seed data, combined with fine-grained Monte Carlo tree search and process supervision signals for rule verification. https://arxiv.org/pdf/2501.12051
-8. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393 
+8. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393
+9. Learning Adaptive **Parallel** Reasoning with Language Models https://github.com/Parallel-Reasoning/APR  **(amazing idea for different reasoning tech)**
+
+## cost-effectively Reinforcement Learning
+1. Tina: Tiny Reasoning Models via LoRA https://github.com/shangshang-wang/Tina
    
 ## Reasoning Dataset
 1.  open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
