@@ -40,7 +40,6 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 2. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
 3. UNO https://arxiv.org/abs/2504.02160  https://bytedance.github.io/UNO/
 4. KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking https://github.com/juyeonnn/KGMEL
-5. 
 
 ## Other work that is different from DeepSeek's technical route but is equally "Aha":
 1. With only 817 training samples, it achieves outstanding performance on the AIME and MATH benchmarks. Belief: After the model has accumulated rich knowledge during the pre-training phase, it may only need a small number of well-structured samples to unlock advanced reasoning capabilities. https://github.com/GAIR-NLP/LIMO 
