@@ -28,6 +28,12 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 20. Seed-Thinking-v1.5 https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
 21. Skywork-OR1 https://github.com/SkyworkAI/Skywork-OR1
 
+### How to get more beneficial responses for RL training during inference?
+1. TTRL https://arxiv.org/abs/2504.16084
+2. DAPO: DAPO: An Open-Source LLM Reinforcement Learning System at Scale https://arxiv.org/abs/2503.14476
+3. Dr.GRPO https://arxiv.org/abs/2503.20783
+4. 
+
 ## Multi-Modal Reasoning Large Language Model
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
 2. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
