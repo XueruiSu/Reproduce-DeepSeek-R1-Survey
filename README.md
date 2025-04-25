@@ -56,7 +56,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 1. Tina: Tiny Reasoning Models via LoRA https://github.com/shangshang-wang/Tina
    
 ## Reasoning Dataset
-1.  open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
+1. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 2. Congliu/Chinese-DeepSeek-R1-Distill-data-110k https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k
 3. Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
 4. TechxGenus/deepseek_r1_code_1k https://huggingface.co/datasets/TechxGenus/deepseek_r1_code_1k
@@ -69,6 +69,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 11. Open-Reasoner-Zero/orz_math_57k_collection https://huggingface.co/datasets/Open-Reasoner-Zero/orz_math_57k_collection
 12. Beyond AIME (Seed-Thinking-v1.5) https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
 13. Skywork/Skywork-OR1-RL-Data https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data
+14. LIMO: https://huggingface.co/datasets/GAIR/LIMO
+15. nvidia/OpenMathReasoning: https://huggingface.co/datasets/nvidia/OpenMathReasoning 
 
 ## PipeLine work which can be used to reproduce R1 more easily:
 1. HybridFlow: A Flexible and Efficient RLHF Framework. https://arxiv.org/abs/2409.19256 https://github.com/volcengine/verl
