@@ -54,7 +54,11 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 
 ## cost-effectively Reinforcement Learning
 1. Tina: Tiny Reasoning Models via LoRA https://github.com/shangshang-wang/Tina
-   
+
+## Awesome survey about reasoning
+1. Towards Reasoning Era: A Survey of  Long Chain-of-Thought for Reasoning Large Language Models https://arxiv.org/abs/2503.09567
+2. From System 1 to System 2: A Survey of  Reasoning Large Language Models https://arxiv.org/abs/2502.17419
+
 ## Reasoning Dataset
 1. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 2. Congliu/Chinese-DeepSeek-R1-Distill-data-110k https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k
