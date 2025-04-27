@@ -29,11 +29,15 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 21. Skywork-OR1 https://github.com/SkyworkAI/Skywork-OR1
 22. Heimdall: test-time scaling on the generative verification https://arxiv.org/pdf/2502.03095
 
-### How to get more beneficial responses for RL training during inference?
+### Data-efficiency Reinforcement Learning
 1. TTRL https://arxiv.org/abs/2504.16084
 2. DAPO: DAPO: An Open-Source LLM Reinforcement Learning System at Scale https://arxiv.org/abs/2503.14476
 3. Dr.GRPO https://arxiv.org/abs/2503.20783
 4. CPPO: Accelerating the Training of Group Relative Policy Optimization-Based Reasoning Models https://arxiv.org/abs/2503.22342
+5. LUFFY Learning to Reason under Off-Policy Guidance: https://arxiv.org/abs/2504.14945
+
+### Cost-efficiency Reinforcement Learning
+1. Tina: Tiny Reasoning Models via LoRA https://github.com/shangshang-wang/Tina
 
 ## Multi-Modal Reasoning Large Language Model
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
@@ -52,8 +56,6 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 8. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393
 9. Learning Adaptive **Parallel** Reasoning with Language Models https://github.com/Parallel-Reasoning/APR  **(amazing idea for different reasoning tech)**
 
-## cost-effectively Reinforcement Learning
-1. Tina: Tiny Reasoning Models via LoRA https://github.com/shangshang-wang/Tina
 
 ## Awesome survey about reasoning
 1. Towards Reasoning Era: A Survey of  Long Chain-of-Thought for Reasoning Large Language Models https://arxiv.org/abs/2503.09567
