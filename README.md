@@ -1,73 +1,105 @@
 ## News
+- [2026/10/18] Added 48 checked resources covering RLVR methods, data and compute efficiency, multimodal reasoning, datasets, training frameworks, DeepSeek releases, and reward analysis.
 - [2025/04/06] We released a novel RL algorithm named Trust Region Preference Approximation (TRPA) for LLM reasoning tasks on 6 Apr 2025, welcome your suggestion and discussion! Paper link: [Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning](https://arxiv.org/abs/2504.04524).
 
 # Reproduce-DeepSeek-R1-Survey
 This repository collects various works that reproduce DeepSeek R1, as well as works related to DeepSeek R1 and the DeepSeek series.
 
+New entries in the **2026-10-18** update were checked against original papers, author-maintained repositories, and model or dataset cards. This is a curated selection; summaries describe reported methods and artifacts rather than independently reproduced results. Paper submission dates and model release dates are treated separately.
+
 ## Work related to DeepSeek's Tech, i.e. papers for LLM reasoning tasks mainly relying on RL
+
 1. Logic RL: R1 reproduction of logic problems https://arxiv.org/abs/2502.14768
-2. Start RL with short context length and gradually increase context length. https://github.com/agentica-project/deepscaler 
+2. Start RL with short context length and gradually increase context length. https://github.com/agentica-project/deepscaler
 3. The role of CoT in Reasoning https://github.com/eddycmu/demystify-long-cot  https://arxiv.org/pdf/2502.03373
 4. Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning https://github.com/XueruiSu/Trust-Region-Preference-Approximation
-5. Hierarchical LLM Reasoning via Scaling Thought Templates Revolutionary inference-scaling paradigm with a hierarchical RL algorithm: empowering a 32B model with 500 thought templates to outperform o1-preview and DeepSeek-V3 in reasoning tasks. https://github.com/Gen-Verse/ReasonFlux 
-6. By imitating the correct samples, learning the preference of the wrong samples, and focusing on the key steps, there is no need to rely on super-large-scale models (such as DeepSeek-R1) for distillation, and only training is done through reinforcement learning. 
- https://github.com/InternLM/OREAL https://arxiv.org/abs/2502.06781 
-7. Build a structured thinking template library. This idea should be more suitable for Science problems. Reasoning for Science problems can be done in this way. https://github.com/Gen-Verse/ReasonFlux https://arxiv.org/abs/2502.06772 
-8. https://github.com/Jiayi-Pan/TinyZero
-9. Multi-Turn System: Teach large language models (LLMs) to criticize and improve their outputs, and train critics through reinforcement learning.  https://arxiv.org/abs/2502.0349 
-10. Experience the Ahah moment yourself for < $30. Through RL, the 3B base LM develops self-verification and search abilities https://github.com/Jiayi-Pan/TinyZero
-11. Only ORM does Rewardmodel+RL for training  https://github.com/Mohammadjafari80/GSM8K-RLVR
-12. Agent Training Gym-Sokoban https://github.com/ZihanWang314/RAGEN
-13. R1 Computer Use (LLM-Computer Interaction) train an agent to interact with a computer environment (e.g., file system, web browser, command line) while utilizing a neural reward model to validate the correctness of the agent’s actions and reason about intermediate steps.    https://github.com/agentsea/r1-computer-use 
-14. Aha Moment reproduction tutorial.  https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/mini-deepseek-r1-aha-grpo.ipynb  
-15. Simple Reinforcement Learning for Reasoning  https://github.com/hkust-nlp/simpleRL-reason
-16. Open-Reasoner-Zero https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero
-17. MLA Transfer https://arxiv.org/abs/2502.14837 https://github.com/JT-Ushio/MHA2MLA
-18. Online-DPO-R1 https://github.com/RLHFlow/Online-DPO-R1
-19. Short-RL https://github.com/lblankl/Short-RL
-20. Seed-Thinking-v1.5 https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
-21. Skywork-OR1 https://github.com/SkyworkAI/Skywork-OR1
-22. Heimdall: test-time scaling on the generative verification https://arxiv.org/pdf/2502.03095
+5. ReasonFlux: Hierarchical LLM Reasoning via Scaling Thought Templates. Uses a hierarchy of thought templates and reinforcement learning for reasoning and inference-time scaling. https://arxiv.org/abs/2502.06772 https://github.com/Gen-Verse/ReasonFlux
+6. By imitating the correct samples, learning the preference of the wrong samples, and focusing on the key steps, there is no need to rely on super-large-scale models (such as DeepSeek-R1) for distillation, and only training is done through reinforcement learning.
+ https://github.com/InternLM/OREAL https://arxiv.org/abs/2502.06781
+7. Teaching Language Models to Critique via Reinforcement Learning (CTRL). Trains a critic to provide feedback that improves a fixed code generator through iterative revision. https://arxiv.org/abs/2502.03492
+8. Experience the Ahah moment yourself for < $30. Through RL, the 3B base LM develops self-verification and search abilities https://github.com/Jiayi-Pan/TinyZero
+9. Only ORM does Rewardmodel+RL for training  https://github.com/Mohammadjafari80/GSM8K-RLVR
+10. Agent Training Gym-Sokoban https://github.com/ZihanWang314/RAGEN
+11. R1 Computer Use (LLM-Computer Interaction) train an agent to interact with a computer environment (e.g., file system, web browser, command line) while utilizing a neural reward model to validate the correctness of the agent’s actions and reason about intermediate steps.    https://github.com/agentsea/r1-computer-use
+12. Aha Moment reproduction tutorial.  https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/mini-deepseek-r1-aha-grpo.ipynb
+13. Simple Reinforcement Learning for Reasoning  https://github.com/hkust-nlp/simpleRL-reason
+14. Open-Reasoner-Zero https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero
+15. MLA Transfer https://arxiv.org/abs/2502.14837 https://github.com/JT-Ushio/MHA2MLA
+16. Online-DPO-R1 https://github.com/RLHFlow/Online-DPO-R1
+17. Short-RL https://github.com/lblankl/Short-RL
+18. Seed-Thinking-v1.5 https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
+19. Skywork-OR1 https://github.com/SkyworkAI/Skywork-OR1
+20. Heimdall: test-time scaling on the generative verification https://arxiv.org/pdf/2502.03095
+21. Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning. Trains interleaved reasoning and multi-turn search with outcome rewards and retrieved-token masking; training code, checkpoints, data, and experiment logs are available. https://arxiv.org/abs/2503.09516 https://github.com/PeterGriffinJin/Search-R1
+22. VAPO: Efficient and Reliable Reinforcement Learning for Advanced Reasoning Tasks. A value-based PPO framework that addresses value-model bias, variable response lengths, and sparse rewards in long-CoT reasoning. https://arxiv.org/abs/2504.05118
+23. DeepCoder-14B-Preview. Continues RL from DeepSeek-R1-Distill-Qwen-14B for code reasoning with GRPO+ and iterative context lengthening; the release includes model weights and a problem/test dataset. https://huggingface.co/agentica-org/DeepCoder-14B-Preview https://huggingface.co/datasets/agentica-org/DeepCoder-Preview-Dataset https://github.com/agentica-project/rllm
+24. AceReason-Nemotron: Advancing Math and Code Reasoning through Reinforcement Learning. Studies math-then-code RL on strong distilled models, verifiable data curation, response-length curricula, and on-policy updates; model weights are released. https://arxiv.org/abs/2505.16400 https://huggingface.co/nvidia/AceReason-Nemotron-14B
+25. ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models. Studies longer RL training with controlled KL regularization, reference-policy resets, and diverse verifiable tasks; model weights are released. https://arxiv.org/abs/2505.24864 https://huggingface.co/nvidia/Nemotron-Research-Reasoning-Qwen-1.5B
+26. Group Sequence Policy Optimization (GSPO). Uses length-normalized sequence likelihood ratios and sequence-level clipping to improve RL stability, including MoE training. https://arxiv.org/abs/2507.18071 https://qwenlm.github.io/blog/gspo/
+27. Revisiting Reinforcement Learning with Verifiable Rewards from a Contrastive Perspective (ConSPO). Uses a contrastive objective over successful and unsuccessful rollouts, scored with length-normalized sequence log-probabilities, as an alternative to GRPO's clipped-ratio surrogate. https://arxiv.org/abs/2605.12969
+28. Reinforcement Learning with Verifiable Rewards for Small Search Agents. Studies GRPO training of a 0.8B model with Wikipedia search and compares reward shapes for retrieval-grounded question answering without teacher distillation in the training loop. https://arxiv.org/abs/2609.28765
+29. Fed-GRPO: Reward-Signal-Driven Federated Group Relative Policy Optimization. Uses reward statistics to coordinate aggregation, local optimization, and sparse communication for mathematical-reasoning RL across clients. Code is public. https://arxiv.org/abs/2610.11502 https://github.com/HKU-HealthAI/Fed-GRPO
 
 ### Data-efficiency Reinforcement Learning
+
 1. TTRL https://arxiv.org/abs/2504.16084
-2. DAPO: DAPO: An Open-Source LLM Reinforcement Learning System at Scale https://arxiv.org/abs/2503.14476
+2. DAPO: An Open-Source LLM Reinforcement Learning System at Scale https://arxiv.org/abs/2503.14476
 3. Dr.GRPO https://arxiv.org/abs/2503.20783
-4. CPPO: Accelerating the Training of Group Relative Policy Optimization-Based Reasoning Models https://arxiv.org/abs/2503.22342
-5. LUFFY Learning to Reason under Off-Policy Guidance: https://arxiv.org/abs/2504.14945
+4. LUFFY Learning to Reason under Off-Policy Guidance: https://arxiv.org/abs/2504.14945
+5. Reinforcement Learning for Reasoning in Large Language Models with One Training Example (One-Shot RLVR). Studies mathematical-reasoning RL with one or a few examples and the role of exploration; training/evaluation code, data, checkpoints, and logs are released. https://arxiv.org/abs/2504.20571 https://github.com/ypwang61/One-Shot-RLVR
+6. Absolute Zero: Reinforced Self-play Reasoning with Zero Data. A proposer-solver self-play loop generates and verifies code-reasoning tasks with a code executor, without an external curated training dataset; code, model weights, and logs are released. https://arxiv.org/abs/2505.03335 https://github.com/LeapLabTHU/Absolute-Zero-Reasoner
 
 ### Cost-efficiency Reinforcement Learning
+
 1. Tina: Tiny Reasoning Models via LoRA https://github.com/shangshang-wang/Tina
+2. CPPO: Accelerating the Training of Group Relative Policy Optimization-Based Reasoning Models https://arxiv.org/abs/2503.22342
+3. FastCuRL: Curriculum Reinforcement Learning with Stage-wise Context Scaling for Efficient Training R1-like Reasoning Models. Combines length-aware data segmentation and progressively extended training contexts for efficient RL on DeepSeek-R1-Distill-Qwen-1.5B; code, model weights, and data are released. https://arxiv.org/abs/2503.17287 https://github.com/nick7nlp/FastCuRL
+4. Act Only When It Pays: Efficient Reinforcement Learning for LLM Reasoning via Selective Rollouts (GRESO). Predicts and skips uninformative prompts before rollout using historical reward dynamics to reduce rollout and training cost; implementation is available. https://arxiv.org/abs/2506.02177 https://github.com/Infini-AI-Lab/GRESO
+5. Where the Model Changes Its Mind: Hindsight-Divergence Localization for Efficient Reinforcement Learning with Verifiable Rewards (HDL). Selects trajectory branch points from hindsight-induced likelihood changes, reuses sampled prefixes, and trains on newly generated suffixes to reduce rollout work. https://arxiv.org/abs/2609.36864
 
 ## Multi-Modal Reasoning Large Language Model
+
 1. BioMedGPT-R1  https://www.163.com/dy/article/JOU1ULKJ0511B8LM.html https://finance.sina.com.cn/tech/digi/2025-02-21/doc-inemfmwk1568534.shtml
 2. Kimi-k1.5 https://github.com/MoonshotAI/Kimi-k1.5
-3. UNO https://arxiv.org/abs/2504.02160  https://bytedance.github.io/UNO/
-4. KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking https://github.com/juyeonnn/KGMEL
+3. UNO (related multimodal image generation). Less-to-More Generalization: Unlocking More Controllability by In-Context Generation. A subject-conditioned image-generation model. https://arxiv.org/abs/2504.02160 https://bytedance.github.io/UNO/
+4. KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking (related multimodal entity-linking application). https://github.com/juyeonnn/KGMEL
+5. Vision-R1: Incentivizing Reasoning Capability in Multimodal Large Language Models. Cold-start multimodal CoT followed by GRPO with progressive thinking suppression. Paper: https://arxiv.org/abs/2503.06749 Code: https://github.com/Osilly/Vision-R1 Weights: https://huggingface.co/Osilly/Vision-R1-7B
+6. R1-Onevision: Advancing Generalized Multimodal Reasoning through Cross-Modal Formalization. Converts visual inputs into textual representations for reasoning-data construction, followed by SFT and RL. Paper: https://arxiv.org/abs/2503.10615 Code: https://github.com/Fancy-MLLM/R1-Onevision Data: https://huggingface.co/datasets/Fancy-MLLM/R1-Onevision
+7. R1-VL: Learning to Reason with Multimodal Large Language Models via Step-wise Group Relative Policy Optimization. StepGRPO adds step-wise reasoning accuracy and validity rewards after SFT warm-up. Paper: https://arxiv.org/abs/2503.12937 Code: https://github.com/jingyi0000/R1-VL
+8. OpenVLThinker: Complex Vision-Language Reasoning via Iterative SFT-RL Cycles. Alternates SFT and RL, using improved policies to construct the next round of reasoning data. Paper: https://arxiv.org/abs/2503.17352 Code: https://github.com/uclanlp/OpenVLThinker Weights: https://huggingface.co/ydeng9/OpenVLThinker-7B
+9. Video-R1: Reinforcing Video Reasoning in MLLMs. T-GRPO encourages temporal reasoning with mixed image-video data for SFT cold start and RL. Paper: https://arxiv.org/abs/2503.21776 Code: https://github.com/tulerfeng/Video-R1 Weights: https://huggingface.co/Video-R1/Video-R1-7B
+10. Advancing Multimodal Reasoning: From Optimized Cold Start to Staged Reinforcement Learning (ReVisual-R1). Combines text-only cold start, multimodal RL with Prioritized Advantage Distillation, and subsequent text-only RL. Paper: https://arxiv.org/abs/2506.04207 Code: https://github.com/CSfufu/Revisual-R1 Weights: https://huggingface.co/csfufu/Revisual-R1-final
+11. Perception-R1: Advancing Multimodal Reasoning Capabilities of Multimodal Large Language Models via Visual Perception Reward. Adds an LLM-judged visual perception reward to GRPO using textual visual annotations. Paper: https://arxiv.org/abs/2506.07218 Code: https://github.com/tongxiao2002/Perception-R1 Weights: https://huggingface.co/tongxiao2002/Perception-R1-7B
+12. Omni-R1: Towards the Unified Generative Paradigm for Multimodal Reasoning. Uses SFT and RL with perception alignment and perception rewards to generate intermediate images during reasoning; also studies a text-data-bootstrapped Omni-R1-Zero variant. Paper: https://arxiv.org/abs/2601.09536 Code: https://github.com/ModalityDance/Omni-R1
 
 ## Other work that is different from DeepSeek's technical route but is equally "Aha":
-1. With only 817 training samples, it achieves outstanding performance on the AIME and MATH benchmarks. Belief: After the model has accumulated rich knowledge during the pre-training phase, it may only need a small number of well-structured samples to unlock advanced reasoning capabilities. https://github.com/GAIR-NLP/LIMO 
+
+1. With only 817 training samples, it achieves outstanding performance on the AIME and MATH benchmarks. Belief: After the model has accumulated rich knowledge during the pre-training phase, it may only need a small number of well-structured samples to unlock advanced reasoning capabilities. https://github.com/GAIR-NLP/LIMO
 2. Rule Based Rewards for Language Model Safety https://cdn.openai.com/rule-based-rewards-for-language-model-safety.pdf
 3. MATH-Perturb: Benchmarking LLMs' Math Reasoning Abilities against Hard Perturbations.  https://arxiv.org/abs/2502.06453
 4. Free Process Rewards without Process Labels. https://arxiv.org/abs/2412.01981
 5. Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback. https://arxiv.org/abs/2501.12895
 6. Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling https://arxiv.org/abs/2502.06703
 7. MedS3: Towards Medical Small Language Models with Self-Evolved Slow Thinking. MedS3 consists of a policy model and a process reward model (PRM), which is iteratively optimized by learning on 16 different datasets, including medical diagnosis, biomedicine, and knowledge question answering, using only 7465 seed data, combined with fine-grained Monte Carlo tree search and process supervision signals for rule verification. https://arxiv.org/pdf/2501.12051
-8. s1: Simple test-time scaling s1K contains 1000 carefully selected math problems and reasoning traces distilled from Gemini Flash. When selecting problems, researchers focus on difficulty, diversity, and quality. By fine-tuning Qwen2.5-32B-Instruct on the s1K dataset, the researchers successfully surpassed OpenAI's o1-preview in the competition math benchmark, with a maximum improvement of 27%. https://arxiv.org/abs/2501.19393
+8. s1: Simple test-time scaling. Fine-tunes Qwen2.5-32B-Instruct on 1,000 diverse reasoning examples distilled from Gemini Flash Thinking Experimental, then controls inference compute with budget forcing. https://arxiv.org/abs/2501.19393
 9. Learning Adaptive **Parallel** Reasoning with Language Models https://github.com/Parallel-Reasoning/APR  **(amazing idea for different reasoning tech)**
 
-
 ## Awesome survey about reasoning
+
 1. Towards Reasoning Era: A Survey of  Long Chain-of-Thought for Reasoning Large Language Models https://arxiv.org/abs/2503.09567
 2. From System 1 to System 2: A Survey of  Reasoning Large Language Models https://arxiv.org/abs/2502.17419
+3. Reinforced MLLM: A Survey on RL-Based Reasoning in Multimodal Large Language Models. Reviews RL algorithms, reward designs, datasets, and evaluation for multimodal reasoning. Paper: https://arxiv.org/abs/2504.21277 Resources: https://github.com/zcharon/Reinforced-MLLM
+4. Perception, Reason, Think, and Plan: A Survey on Large Multimodal Reasoning Models. Organizes multimodal reasoning methods from perception-driven pipelines through reasoning, reflection, and planning. Paper: https://arxiv.org/abs/2505.04921 Resources: https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models
+5. A Survey of Reinforcement Learning for Large Reasoning Models. Covers RL components, training data, infrastructure, and applications following DeepSeek-R1. Paper: https://arxiv.org/abs/2509.08827 Resources: https://github.com/TsinghuaC3I/Awesome-RL-for-LRMs
 
 ## Reasoning Dataset
+
 1. open-r1/OpenR1-Math-220k https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 2. Congliu/Chinese-DeepSeek-R1-Distill-data-110k https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k
 3. Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
 4. TechxGenus/deepseek_r1_code_1k https://huggingface.co/datasets/TechxGenus/deepseek_r1_code_1k
 5. umarigan/deepseek-r1-reasoning-prompts https://huggingface.co/datasets/umarigan/deepseek-r1-reasoning-prompts
-6. mlabonne/dolphin-r1-deepseek mlabonne/dolphin-r1-deepseek
+6. mlabonne/dolphin-r1-deepseek https://huggingface.co/datasets/mlabonne/dolphin-r1-deepseek
 7. DKYoon/dolphin-r1-deepseek-filtered-short https://huggingface.co/datasets/DKYoon/dolphin-r1-deepseek-filtered-short
 8. open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details https://huggingface.co/datasets/open-llm-leaderboard/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B-details
 9. agentica-org/DeepScaleR-Preview-Dataset: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
@@ -76,9 +108,15 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 12. Beyond AIME (Seed-Thinking-v1.5) https://github.com/ByteDance-Seed/Seed-Thinking-v1.5/
 13. Skywork/Skywork-OR1-RL-Data https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data
 14. LIMO: https://huggingface.co/datasets/GAIR/LIMO
-15. nvidia/OpenMathReasoning: https://huggingface.co/datasets/nvidia/OpenMathReasoning 
+15. nvidia/OpenMathReasoning: https://huggingface.co/datasets/nvidia/OpenMathReasoning
+16. BytedTsinghua-SIA/DAPO-Math-17k: Competition-math prompts with verifiable answers for RL training; an Open R1 processed version is also available. Data: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k Processed data: https://huggingface.co/datasets/open-r1/DAPO-Math-17k-Processed
+17. SynthLabsAI/Big-Math-RL-Verified: Filtered mathematical problems with closed-form verifiable answers for RL; Hugging Face access conditions apply. Paper: https://arxiv.org/abs/2502.17387 Data: https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified
+18. open-r1/Mixture-of-Thoughts: Verified DeepSeek-R1-distilled reasoning traces covering mathematics, coding, and science for supervised reasoning distillation. Data: https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts
+19. open-thoughts/OpenThoughts3-1.2M: QwQ-32B-annotated math, code, and science reasoning data, accompanied by an open data-curation recipe. Paper: https://arxiv.org/abs/2506.04178 Data: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M Code: https://github.com/open-thoughts/open-thoughts
+20. facebook/natural_reasoning: Public subset of approximately 1.1 million general-domain reasoning questions, with reference answers where available and Llama-3.3-70B-Instruct responses. Paper: https://arxiv.org/abs/2502.13124 Data: https://huggingface.co/datasets/facebook/natural_reasoning
 
 ## PipeLine work which can be used to reproduce R1 more easily:
+
 1. HybridFlow: A Flexible and Efficient RLHF Framework. https://arxiv.org/abs/2409.19256 https://github.com/volcengine/verl
 2. ReaLHF: ReaL: Efficient RLHF Training for LLMs with Parameter Reallocation. https://github.com/openpsi-project/ReaLHF
 3. OpenRLHF: a high-performance RLHF framework built on Ray, DeepSpeed and HF Transformers. https://github.com/OpenRLHF/OpenRLHF
@@ -86,8 +124,14 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 5. NVIDIA NeMo-Aligner: a scalable toolkit for efficient model alignment. https://github.com/NVIDIA/NeMo-Aligner
 6. MoBA: MIXTURE OF BLOCK ATTENTION FOR LONG-CONTEXT LLMS https://github.com/MoonshotAI/MoBA
 7. Open R1 https://github.com/huggingface/open-r1
+8. AReaL: A Large-Scale Asynchronous Reinforcement Learning System for Language Reasoning. Decouples rollout generation from policy updates and controls sample staleness for scalable math and code reasoning RL. https://arxiv.org/abs/2505.24298 https://github.com/areal-project/AReaL
+9. slime: An LLM post-training framework for RL Scaling. Connects Megatron training with SGLang rollouts and customizable generation, rewards, and verifiers; supports DeepSeek-V3, V3.1, and R1. https://github.com/THUDM/slime https://thudm.github.io/slime/
+10. SkyRL: A Modular Full-stack RL Library for LLMs. Provides training components and Gymnasium-style math, coding, search, and SQL environments for reasoning and multi-turn tool-use RL. https://github.com/NovaSky-AI/SkyRL https://docs.skyrl.ai/docs
+11. NeMo RL: A Scalable and Efficient Post-Training Library. Provides GRPO, DAPO, GSPO, and on-policy distillation with PyTorch DTensor and Megatron backends, including a documented DeepScaleR reproduction recipe. https://github.com/NVIDIA-NeMo/RL https://github.com/NVIDIA-NeMo/RL/discussions/1188
+12. RLinf: Flexible and Efficient Large-scale Reinforcement Learning via Macro-to-Micro Flow Transformation. Optimizes composed RL workflows with adaptive execution and scheduling, evaluated on reasoning RL as well as embodied tasks. https://arxiv.org/abs/2509.15965 https://github.com/RLinf/RLinf
 
 ## DeepSeek Series
+
 1. DreamCraft3D https://arxiv.org/abs/2310.16818
 2. Fire-Flyer AI-HPC https://arxiv.org/abs/2408.14158
 3. Expert-Specialized Fine-Tuning https://github.com/deepseek-ai/ESFT
@@ -106,20 +150,23 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 16. DeepSeek-Prover https://arxiv.org/abs/2405.14333
 17. DeepSeek-VL https://arxiv.org/abs/2403.05525
 18. DeepSeek-Coder https://arxiv.org/abs/2401.14196
-19. DeepSeek: Content Based Image Search & Retrieval https://arxiv.org/abs/2401.14196
-20. FlashMLA https://github.com/deepseek-ai/FlashMLA
-21. DeepEP https://github.com/deepseek-ai/DeepEP
-22. DeepGEMM https://github.com/deepseek-ai/DeepGEMM
+19. FlashMLA https://github.com/deepseek-ai/FlashMLA
+20. DeepEP https://github.com/deepseek-ai/DeepEP
+21. DeepGEMM https://github.com/deepseek-ai/DeepGEMM
+22. DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition. Combines recursive proof decomposition, synthetic cold-start data, and RL for Lean 4; releases 7B and 671B checkpoints and ProverBench. https://arxiv.org/abs/2504.21801 https://github.com/deepseek-ai/DeepSeek-Prover-V2
+23. DeepSeek-R1-0528. Updates R1 through additional post-training compute and algorithmic improvements, with stronger reasoning and an accompanying Qwen3-8B model distilled from its reasoning traces. https://huggingface.co/deepseek-ai/DeepSeek-R1-0528 https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+24. DeepSeek-V3.1. A hybrid model supporting thinking and non-thinking modes through chat templates, with post-training improvements to tool use and agent tasks. https://huggingface.co/deepseek-ai/DeepSeek-V3.1
+25. DeepSeek-V3.2-Exp: Boosting Long-Context Efficiency with DeepSeek Sparse Attention. Introduces sparse attention on top of V3.1-Terminus, with released weights, inference code, and attention kernels. https://github.com/deepseek-ai/DeepSeek-V3.2-Exp https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp
+26. DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning. Trains a proof generator against a learned verifier and rewards detecting and correcting issues in its own proofs. https://arxiv.org/abs/2511.22570 https://github.com/deepseek-ai/DeepSeek-Math-V2 https://huggingface.co/deepseek-ai/DeepSeek-Math-V2
+27. DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models. Combines sparse attention, scaled reasoning RL, and synthetic agent tasks; releases V3.2 and the higher-compute Speciale variant. https://arxiv.org/abs/2512.02556 https://huggingface.co/deepseek-ai/DeepSeek-V3.2 https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale
+28. DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence. Releases Flash and Pro models with hybrid compressed attention and a post-training pipeline combining domain-specific SFT/RL experts with on-policy distillation. https://arxiv.org/abs/2606.19348 https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+29. DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression. A native image-and-text model using a causal encoder-decoder and a SFT, RL, and on-policy-distillation recipe, with controllable reasoning effort and released evaluation instructions. https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
+30. DeepSeek-V4.1-Flash-1017. An open-weight update using RL with self-feedback for end-to-end project development, with author-reported gains in reasoning, coding, agent tasks, and visual benchmarks and reduced output length and task time. https://api-docs.deepseek.com/news/news261017/ https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 
-    
 ## Discussion about Reward System
+
 1. Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning https://arxiv.org/abs/2502.06781
-
-
-
-
-
-
-
-
-
+2. Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model? Compares base and RLVR-trained models at small and large pass@k, separating improved sampling efficiency from expansion of solution coverage in the evaluated settings. https://arxiv.org/abs/2504.13837 https://github.com/LeapLabTHU/limit-of-RLVR
+3. Noisy Data is Destructive to Reinforcement Learning with Verifiable Rewards. Rechecks supposedly incorrect training annotations and studies the effects of genuine label noise on mathematical reasoning and Text2SQL. Code and data are public. https://arxiv.org/abs/2603.16140 https://github.com/uiuc-kang-lab/rlvr-noisy-data
+4. Verifiable Process Rewards for Agentic Reasoning (VPR). Uses symbolic and algorithmic task oracles to score intermediate actions in Sokoban, Sudoku, and Minesweeper, studying dense credit assignment and transfer beyond the training games. Training and evaluation code is public. https://arxiv.org/abs/2605.10325 https://github.com/thu-nics/VPR
+5. Reinforcement Learning with Verifiable Rewards: GRPO's Loss, Dynamics, and Success Amplification. Analyzes how reward normalization and KL regularization affect GRPO policy updates and success probability under a binary-reward model. https://proceedings.mlr.press/v306/mroueh26a.html
