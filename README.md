@@ -48,6 +48,11 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 39. Gibbs-Gap Policy Optimization for Off-Policy RL with Verifiable Rewards (GGPO). Optimizes a group log-mean-exp contrast of KL-adjusted rewards on off-policy responses, with periodic reference refresh and no learner-to-behavior importance weights. https://arxiv.org/abs/2610.20814 https://github.com/thunderous77/GGPO
 40. Agent-Reflex: Teaching Language Agents to Act Reflectively. Mines reflection skills from matched success-failure trajectories with perturbed tool feedback, then combines reflective SFT with agentic RL and skill-guided on-policy distillation for failure recovery. https://arxiv.org/abs/2610.17953 https://github.com/RUC-NLPIR/Agent-Reflex
 41. Rollout-Time Intervention: Unlocking Agentic Reinforcement Learning Beyond Policy Limits. Repairs all-failed rollout groups using evaluation rubrics and policy-model self-intervention, then applies perplexity filtering and token reweighting to learn from the corrected trajectories. https://arxiv.org/abs/2610.13438 https://github.com/Alibaba-NLP/qqr
+42. Long-Horizon RL Needs Muon. Studies a single-rollout asynchronous recipe combining Muon updates for hidden matrices, token-averaged policy loss, truncated importance sampling, and length and tool-error penalties for repository-level issue resolution. https://arxiv.org/abs/2610.20256
+43. Enabling Token-wise Importance Sampling in Off-Policy RLVR with Proximal KL Regularization. Separates the proximal reference from rollout behavior and combines token-wise importance correction with bounded future KL credit for learning from reused responses and stale rollouts. https://arxiv.org/abs/2610.18738
+44. A Stronger Teacher Within: Strengthening MoE Models via On-Policy Bidirectional Distillation (MoEvolve). Expands the number of active experts, restores expert cooperation through on-policy distillation, strengthens the expanded model with RLVR, and distills its capabilities back to the original expert activation budget. https://arxiv.org/abs/2610.23185
+45. Self-Evolving Coding Agents via Harness-Policy Optimization (Self-HPO). Alternates policy-proposed edits to prompts and runtime logic with RL under the selected harness, using unsolved training tasks to refresh the next harness-search set. https://arxiv.org/abs/2610.22791 https://github.com/MSR-Orchard/Self-HPO https://huggingface.co/self-hpo/Self-HPO-Qwen3.5-35B-A3B
+46. ReTerm: Recovery Training for Self-Improving Terminal Agents. Uses recovery demonstrations for SFT, then branches independent rollouts from saved failure states and jointly optimizes ordinary-task and recovery groups with GRPO and verifier rewards. https://arxiv.org/abs/2610.18484 https://github.com/twothsnd/ReTerm https://huggingface.co/datasets/twothsnd/ReTerm-10K
 
 ### Data-efficiency Reinforcement Learning
 
@@ -59,6 +64,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 6. Absolute Zero: Reinforced Self-play Reasoning with Zero Data. A proposer-solver self-play loop generates and verifies code-reasoning tasks with a code executor, without an external curated training dataset; code, model weights, and logs are released. https://arxiv.org/abs/2505.03335 https://github.com/LeapLabTHU/Absolute-Zero-Reasoner
 7. Learning to Reason with Selective Internal Feedback (SIF). Builds internal rewards by comparing ranked token-level self-certainty profiles through window-level and peer-level voting, then filters samples and groups for GRPO updates without reference answers or external verifiers. https://arxiv.org/abs/2610.21392
 8. Co-Evolving Acting and Forecasting for Language Agents (CoPE). Adds a multi-step action forecasting objective to GRPO on successful on-policy trajectories, sharing the policy backbone across acting and forecasting while retaining one-action-at-a-time inference. https://arxiv.org/abs/2610.20597 https://github.com/ulab-uiuc/CoPE
+9. Explorer-Zero: Improving Self-Play for Long-Horizon Tasks with Decomposable Verifiable Rewards. Alternates proposer-solver training in stateful environments, using the proposer's reached intermediate and final states as verification targets that reward partial task completion without human-authored training tasks. https://arxiv.org/abs/2610.19868
 
 ### Cost-efficiency Reinforcement Learning
 
@@ -69,6 +75,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 5. Where the Model Changes Its Mind: Hindsight-Divergence Localization for Efficient Reinforcement Learning with Verifiable Rewards (HDL). Selects trajectory branch points from hindsight-induced likelihood changes, reuses sampled prefixes, and trains on newly generated suffixes to reduce rollout work. https://arxiv.org/abs/2609.36864
 6. ZeroSearch: Incentivize the Search Capability of LLMs without Searching. Replaces search-engine calls during RL with an LLM retrieval simulator and progressively noisier generated documents to train search policies without search API costs. https://arxiv.org/abs/2505.04588 https://github.com/Alibaba-NLP/ZeroSearch
 7. ForkGRPO: Efficient Exploration and Fine-Grained Credit Assignment for Diffusion Language Models. Branches from high-entropy intermediate states with shared prefixes and combines within-state relative advantages with Monte Carlo segment credits; ForkGRPO-Fast reduces rollout and gradient-replay work through adaptive sampling and sparse replay. https://arxiv.org/abs/2610.19408
+8. Hindsight-Privileged RLVR: Single-Rollout Token Credit Without Group Sampling (HP-RLVR). Scores one completed rollout under causal and future-conditioned views of the generating policy, then weights historically centered verifier rewards by normalized Jensen-Shannon divergence to assign token credit. https://arxiv.org/abs/2610.20497
 
 ## Multi-Modal Reasoning Large Language Model
 
@@ -93,6 +100,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 19. Neos: Learning to Interleave Search and Visual Reasoning. Alternates search-policy RL with supervised updates to a trainable multimodal evidence interface; uses successful reference trajectories to localize policy errors and retain positive credit for useful decisions in failed searches. Paper: https://arxiv.org/abs/2610.17043 Code: https://github.com/Accio-Lab/Neos
 20. Perception or Reasoning? Diagnosing and Tackling Reinforcement Learning Bottlenecks in VLMs. Introduces PARA to measure recoverable perception and reasoning errors, and GRAD to distill visual attention from the best on-policy rollout into weaker rollouts during RL. Paper: https://arxiv.org/abs/2610.21380
 21. Enhancing Multimodal RLVR with Pairwise Token Contrast and Adaptive Trajectory Confidence (PACE). Scores responses under correct and incorrect answer hints with full and nulled visual inputs, then redistributes group-relative advantages using token contrasts and trajectory-dependent confidence. Paper: https://arxiv.org/abs/2610.21671
+22. Skill-Decoupled On-Policy Expert Distillation for Unified Vision-Language Models (SCOPED). Trains visual capability experts independently with RL, extracts reusable skills through reward-guided reflection, and distills skill-conditioned experts into a unified student on its own rollouts using reverse KL. Paper: https://arxiv.org/abs/2610.22217 Code: https://github.com/NEUIR/SCOPED
+23. ReasonUni: Reasoning-Augmented Reconstruction Advances Unified Multimodal Models. Reasons about an image-editing instruction before generating the target image; TreeGRPO compares mean visual rewards across reasoning branches and image rewards within each branch to jointly train understanding and generation. Paper: https://arxiv.org/abs/2610.20781
 
 ## Other work that is different from DeepSeek's technical route but is equally "Aha":
 
@@ -108,6 +117,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 10. Deep Think with Confidence (DeepConf). Uses local model confidence to filter completed reasoning traces or terminate low-confidence traces during parallel inference, then aggregates the remaining answers. https://arxiv.org/abs/2508.15260 https://github.com/facebookresearch/deepconf
 11. Soft Thinking: Unlocking the Reasoning Potential of LLMs in Continuous Concept Space. Forms continuous concept tokens from probability-weighted token embeddings for mathematical and coding reasoning without additional training. https://arxiv.org/abs/2505.15778 https://github.com/UCSB-AI/Soft-Thinking
 12. A Model with No Head and Many Thoughts. Soft Latent Thinking replaces vocabulary-head projections during reasoning with a lightweight projector and rolls out intermediate thoughts in embedding space. https://arxiv.org/abs/2608.31069
+13. SHELDON: Reasoning through Dual Search over Hypothesis and Observation Spaces. Maintains separate hypothesis and observation spaces during test-time search, using unexplained observations, candidate testing, and comparative analysis to guide hypothesis refinement and discovery. https://arxiv.org/abs/2610.18025 https://github.com/stanford-oval/sheldon
 
 ## Awesome survey about reasoning
 
@@ -139,6 +149,7 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 18. open-r1/Mixture-of-Thoughts: Verified DeepSeek-R1-distilled reasoning traces covering mathematics, coding, and science for supervised reasoning distillation. Data: https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts
 19. open-thoughts/OpenThoughts3-1.2M: QwQ-32B-annotated math, code, and science reasoning data, accompanied by an open data-curation recipe. Paper: https://arxiv.org/abs/2506.04178 Data: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M Code: https://github.com/open-thoughts/open-thoughts
 20. facebook/natural_reasoning: Public subset of approximately 1.1 million general-domain reasoning questions, with reference answers where available and Llama-3.3-70B-Instruct responses. Paper: https://arxiv.org/abs/2502.13124 Data: https://huggingface.co/datasets/facebook/natural_reasoning
+21. MMVistaReason: MVR-SFT-528K and MVR-RL-63K. Multimodal reasoning corpora covering analytical tasks and real-world perception, spatial reasoning, counting, and GUI tasks; combines cascaded teacher distillation and answer-likelihood trajectory selection for SFT with model-scale-specific pass-rate filtering for RL. Paper: https://arxiv.org/abs/2610.01352 Construction recipe: https://github.com/JackieForest/MMVistaReason
 
 ## PipeLine work which can be used to reproduce R1 more easily:
 
@@ -156,6 +167,8 @@ This repository collects various works that reproduce DeepSeek R1, as well as wo
 12. RLinf: Flexible and Efficient Large-scale Reinforcement Learning via Macro-to-Micro Flow Transformation. Optimizes composed RL workflows with adaptive execution and scheduling, evaluated on reasoning RL as well as embodied tasks. https://arxiv.org/abs/2509.15965 https://github.com/RLinf/RLinf
 13. Agent-R1: A Unified and Modular Framework for Agentic Reinforcement Learning. Represents multi-turn interaction as step-level transitions, with flexible context management and modular workflow, environment, and optimization interfaces for tool-using agents. https://arxiv.org/abs/2511.14460 https://github.com/AgentR1/Agent-R1
 14. ReFlow: Replay-Driven Decoupling for Efficient RL Post-Training. Reuses recent trajectories through a dual replay cycle, decouples generation from optimization, and adapts resource allocation and generation scheduling for single-turn reasoning and multi-turn agent training. https://arxiv.org/abs/2610.21640
+15. LoongSage. Combines Megatron and SGLang with token-preserving agent trajectory collection, staleness-bounded asynchronous training, topology-aware weight transfer, and multi-teacher on-policy distillation. https://arxiv.org/abs/2610.16352 https://github.com/baidu-baige/LoongSage
+16. ThunderSyncRL: Lossless Acceleration of Agentic Reinforcement Learning. Streams trajectory score gradients for GRPO and teacher-scored turn gradients for on-policy distillation while rollouts continue, then reduces them at a single synchronous optimizer barrier to avoid stale-policy updates. https://arxiv.org/abs/2610.05935
 
 ## DeepSeek Series
 
